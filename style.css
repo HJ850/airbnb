@@ -1,0 +1,350 @@
+/* 초기화 */
+* {
+    margin: 0; padding: 0;
+    background-origin: border-box;
+}
+
+body {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    overflow-y: scroll;
+}
+
+#main-page {
+    /* 백그라운드 */
+    background: url(image/bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 91vh;
+}
+
+.main-navi {
+    padding: 0 151.5px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-navi .logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.main-navi .logo i {
+    font-size: 40px;
+    margin-right: 7px;
+}
+
+.main-navi .logo a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #ff085c;
+    font-weight: 900;
+    display: flex;
+}
+
+.main-navi .search {
+    width: 300px;
+    height: 48px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.main-navi .search .r-icon {
+    background-color: #ff385c;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    align-items: center;
+}
+
+.menu * {
+    background-color: white;
+    border-radius: 22px;
+    border-style: none;
+}
+
+.menu .host {
+    color: rgb(34, 34, 34);
+    width: 115px;
+    height: 42px;
+    text-decoration-line: none;
+    font-size: 14px;
+}
+
+.menu .globe {
+    color: rgb(34, 34, 34);
+    width: 60px;
+    height: 42px;
+    font-size: 15px;
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+
+.menu .user-circle {
+    width: 77px;
+    height: 42px;
+    padding: 5px 5px 5px 12px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.menu .user {   
+    color: #717171;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-title h3 {
+    margin: 300px 150px;
+    font-size: 52px;
+    color: white;
+}
+
+.main-title .around {
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+    top: -280px;
+    left: 150px;
+    cursor: pointer;
+}
+
+#local {
+    padding: 64px 150px;
+}
+
+#local a {
+    color: black;
+    text-decoration-line: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+#local img {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+}
+
+#local b {
+    position: relative;
+    left: 15px;
+    bottom: 15px;
+}
+
+#local span {
+    position: relative;
+    right: 17px;
+    top: 10px;
+}
+
+#local .grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+#everywhere {
+    margin-bottom: 40px;
+    padding: 0px 150px;
+}
+
+#everywhere h3 {
+    font-size: 32px;
+}
+
+#everywhere div {
+    cursor: pointer;
+}
+
+#everywhere img {
+    width: 500px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+#everywhere .place {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#everywhere span {
+    font-size: 13px;
+    padding: 12px 16px;
+}
+
+#everywhere .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#online-life {
+    color: white;
+    background-color: black;
+    padding: 64px 0px 80px;
+}
+
+#online-life .box {
+    padding: 0px 150px;
+}
+
+#online-life .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+#online-life .title {
+    font-size: 32px;
+}
+
+#online-life p {
+    font-size: 16px;
+    margin-top: 4px;
+    line-height: 120%;
+}
+
+#online-life a {
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    color: white;
+    border: 1px solid white;
+    text-decoration-line: none;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+#online-life .item3 {
+    cursor: pointer;
+}
+
+#online-life .item3:nth-child(1) {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+#online-life .item3:nth-child(4) {
+    grid-column: span 2;
+}
+
+#online-life .experience {
+    font-size: 16px;
+    font-weight: 600;
+    min-height: 40px;
+    line-height: 20px;
+    padding: 0px 16px;
+    position: relative;
+    top: -70px;
+}
+
+#online-life .grid3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#host {
+    position: relative;
+    top: 35px;
+    margin-bottom: 70px;
+    padding: 0px 150px;
+}
+
+#host h3 {
+    font-size: 32px;
+}
+
+#host img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#host span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#host .p {
+    padding: 8px 0px 0px;
+}
+
+#host li {
+    list-style: none;
+}
+
+#host .grid4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.bottom {
+    border-top: 1px solid #dddddd;
+    background-color: #f5f5f5;
+    padding: 0px 150px;
+}
+
+#list .listall {
+    padding: 48px 0px;
+}
+
+#list .listbox {
+    font-size: 12px;
+    padding: 0px 12px;
+}
+
+#list li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#list .grid4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#footer {
+    border-top: 1px solid #dddddd;
+    padding: 24px 0px;
+}
+
+#footer .fbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer a {
+    color: black;
+    text-decoration-line: none;
+}
+
+#footer img {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+#footer ul {
+    margin-left: 32px;
+    font-size: 18px;
+}
+
+#footer li {
+    float: left;
+    list-style: none;
+    margin-right: 24px;
+}
