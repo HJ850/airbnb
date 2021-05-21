@@ -1,4 +1,4 @@
-# fab fa-airbnb airbnb
+# airbnb
 
 + HTML CSS 포트폴리오
 
